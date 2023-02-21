@@ -8,7 +8,6 @@ gameplay.time_set(DayTime.DAY)
 gameplay.set_game_mode(CREATIVE, mobs.players_in_game_mode(CREATIVE))
 
 #set global variables
-
 playerX = 0
 playerY = 0
 playerZ = 0
