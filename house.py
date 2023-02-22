@@ -1,3 +1,11 @@
+# House Builder for MakeCode Python
+# @JustinEducation
+# 22 Feb 2023
+
+# Set gameplay
+gameplay.set_weather(CLEAR)
+gameplay.time_set(DayTime.DAY)
+
 def on_on_chat():
     
     size = 4
