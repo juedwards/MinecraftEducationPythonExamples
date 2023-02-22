@@ -8,16 +8,20 @@ gameplay.time_set(DayTime.DAY)
 
 def on_on_chat():
     
+    # set wall length (size) and height.
     size = 4
     walls = 4
     height = 2
-
+    
+    #start at player
     agent.teleport_to_player()
     start_position = agent.get_position()
     
+    # get STONE as resource for walls
     agent.set_slot(1)
     agent.set_item(STONE,64,1)
-
+    
+    #build walls
     counter_height = 0
     while counter_height < height:
         counter_walls = 0
@@ -35,6 +39,7 @@ def on_on_chat():
         agent.place(DOWN)
         counter_height +=1
     
+    #position for roof
     agent.move(BACK, 1)
     agent.move(RIGHT, 1)
 
@@ -47,7 +52,8 @@ def on_on_chat():
     #set counters for build
     index = 0
     sides = 0
-
+    
+    # Add oak steps as resource for roof
     agent.set_slot(2)
     agent.set_item(OAK_WOOD_STAIRS,64,2)
 
