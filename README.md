@@ -13,3 +13,7 @@ Walls can be increased in length and height, roof is created based on size of wa
 PYRAMID
 
 Creates a sandstone pyramid of random size.
+
+STAIRS
+
+Creates stairs down from a high point.
