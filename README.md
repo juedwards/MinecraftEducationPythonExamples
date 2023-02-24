@@ -1,7 +1,7 @@
 # Minecraft Education Python Examples
 Examples of Minecraft Education Python Scripts
 
-This repository a collection of python scripts for building objects in [Minecraft Education](https://education.minecraft.net/en-us), using MakeCode python IDE. There is a [reference guide](https://minecraft.makecode.com/reference) for MakeCode in Minecraft and a range of [examples](https://minecraft.makecode.com/projects) that you might want to try.
+This repository a collection of python scripts for building objects in [Minecraft Education](https://education.minecraft.net/en-us), using MakeCode python IDE. There is a MakeCode [reference guide](https://minecraft.makecode.com/reference) for Minecraft and a range of [examples](https://minecraft.makecode.com/projects) provided by MakeCode that you might want to try.
 
 ## HOUSE
 
