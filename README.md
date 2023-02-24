@@ -7,7 +7,7 @@ The scripts will build mainly single objects and can be combined together.
 
 ## HOUSE
 
-This is a Python code for a Minecraft Education game (https://education.minecraft.net/en-us) that builds a house with walls and roof. The on_on_chat() function is called when the player enters the chat command "house".
+This is a Python code for a [Minecraft Education](https://education.minecraft.net/en-us) game  that builds a house with walls and roof. The on_on_chat() function is called when the player enters the chat command "house".
 
 The size, walls, and height variables determine the dimensions of the house. The start_position variable stores the position of the player before the house is built. The agent.set_slot(1) and agent.set_item(STONE,64,1) functions set the agent's inventory slot to hold 64 units of stone for building walls.
 
