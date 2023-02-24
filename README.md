@@ -5,7 +5,7 @@ This site will build into a collection of python scripts for building objects in
 
 The scripts will build mainly single objects and can be combined together.
 
-HOUSE
+## HOUSE
 
 This is a Python code for a Minecraft Education game (https://education.minecraft.net/en-us) that builds a house with walls and roof. The on_on_chat() function is called when the player enters the chat command "house".
 
@@ -17,10 +17,10 @@ The base variable is used to determine the size of the roof. The index and sides
 
 The while loop builds the roof by placing blocks, turning left and right, and moving forward and backward. The agent.move(UP, 1) and agent.place(DOWN) functions move the agent up one block and place a block underneath to create a solid roof.
 
-PYRAMID
+## PYRAMID
 
 Creates a sandstone pyramid of random size.
 
-STAIRS
+## STAIRS
 
 Creates stairs down from a high point.
