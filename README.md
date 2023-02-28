@@ -47,7 +47,7 @@ The base variable is used to determine the size of the roof. The index and sides
 
 The while loop builds the roof by placing blocks, turning left and right, and moving forward and backward. The agent.move(UP, 1) and agent.place(DOWN) functions move the agent up one block and place a block underneath to create a solid roof.
 
-## PYRAMID (Link)[https://github.com/juedwards/MinecraftEducationPythonExamples/tree/main/pyramid]
+## PYRAMID [To Folder](https://github.com/juedwards/MinecraftEducationPythonExamples/tree/main/pyramid)
 
 Creates a sandstone pyramid of random size.
 
