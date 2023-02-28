@@ -1,3 +1,5 @@
+![alt text](https://education.minecraft.net/content/dam/education-edition/logos/education-minecraft-logo.png)
+
 # Minecraft Education Python Examples
 Examples of Minecraft Education Python Scripts
 
