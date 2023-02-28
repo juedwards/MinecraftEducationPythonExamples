@@ -19,7 +19,7 @@ The if statement checks the value of sec_clock and prints the appropriate number
 
 Overall, this code is a fun way to learn about basic programming concepts like variables, loops, and conditional statements, and it demonstrates how Minecraft can be used as an educational tool for teaching these concepts.
 
-## Pixel Art with Arrays
+## Pixel_Art
 
 ![alt text](https://pbs.twimg.com/media/Fp54BfWWIAEdOL5?format=jpg&name=small)
 
