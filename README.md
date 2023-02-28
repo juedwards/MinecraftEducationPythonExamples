@@ -5,6 +5,8 @@ This repository a collection of python scripts for building objects in [Minecraf
 
 ## Timer
 
+![alt text](https://pbs.twimg.com/media/FqC_NyIXwAAhBXz?format=jpg&name=360x360)
+
 This code is a Minecraft Education script that builds a display and then uses redstone to create a timer that counts up from 0 to 9.
 
 The script starts by setting some global variables, including the agent's location, a counter for the seconds on the timer, and some variables for the size of the display.
