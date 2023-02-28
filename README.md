@@ -21,6 +21,8 @@ Overall, this code is a fun way to learn about basic programming concepts like v
 
 ## Pixel Art with Arrays
 
+![alt text](https://pbs.twimg.com/media/Fp54BfWWIAEdOL5?format=jpg&name=small)
+
 This is a Python script for Minecraft Education that draws a pixel art using the Agent's abilities. The pixel art is represented as a 2D array of numbers, where each number represents a color block. The script loads the appropriate color blocks into the Agent's inventory and then uses a loop to move the Agent and place the blocks in the correct pattern to draw the pixel art.
 
 The script begins by teleporting the Agent to the player's location, so that the pixel art will be drawn near the player. It then defines the pixel art as a 2D array called art_stack. Each row in the array represents a row in the pixel art, and each item in a row represents a block in that row.
