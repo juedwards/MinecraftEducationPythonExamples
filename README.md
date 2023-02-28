@@ -3,7 +3,7 @@ Examples of Minecraft Education Python Scripts
 
 This repository a collection of python scripts for building objects in [Minecraft Education](https://education.minecraft.net/en-us), using MakeCode python IDE. There is a MakeCode [reference guide](https://minecraft.makecode.com/reference) for Minecraft and a range of [examples](https://minecraft.makecode.com/projects) provided by MakeCode that you might want to try.
 
-## Timer Display
+## Timer
 
 This code is a Minecraft Education script that builds a display and then uses redstone to create a timer that counts up from 0 to 9.
 
