@@ -31,7 +31,7 @@ Finally, the script defines an event handler that will run the code when the pla
 
 Note that the script assumes that the Agent has enough blocks of each color in its inventory to draw the entire pixel art. If the Agent runs out of blocks, it will stop drawing and the pixel art may be incomplete.
 
-## HOUSE
+## House
 
 This is a Python code for a [Minecraft Education](https://education.minecraft.net/en-us) game  that builds a house with walls and roof. The on_on_chat() function is called when the player enters the chat command "house".
 
