@@ -1,5 +1,3 @@
-![alt text](https://twitter.com/i/status/1616480895833178114)
-
 # Minecraft Education Python Examples
 Examples of Minecraft Education Python Scripts
 
