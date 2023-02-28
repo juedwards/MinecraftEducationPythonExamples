@@ -47,9 +47,15 @@ The base variable is used to determine the size of the roof. The index and sides
 
 The while loop builds the roof by placing blocks, turning left and right, and moving forward and backward. The agent.move(UP, 1) and agent.place(DOWN) functions move the agent up one block and place a block underneath to create a solid roof.
 
-## PYRAMID [To Folder](https://github.com/juedwards/MinecraftEducationPythonExamples/tree/main/pyramid)
+## PYRAMID 
 
-Creates a sandstone pyramid of random size.
+[Link To Folder](https://github.com/juedwards/MinecraftEducationPythonExamples/tree/main/pyramid)
+
+This is a Python code for building a pyramid in Minecraft using the MakeCode platform.
+
+This Python code uses the MakeCode platform to build a pyramid in Minecraft. It is well-structured and organized with descriptive variable and function names that make it easy to understand what's happening. The code sets the game mode to Creative, the weather to clear, and the time of day to day. It defines global variables for the player's coordinates.
+
+The on_chat function is called when the player types the command "pyramid" in the chat. Within the function, the player's coordinates are captured and a random size is generated for the base of the pyramid. The height of the pyramid is calculated based on the size of the base. A loop is initiated to build the pyramid, with each iteration building one level of the pyramid. Within the loop, the agent is positioned and given resources, and then begins building the pyramid. Once the pyramid is complete, the function ends.
 
 ## STAIRS
 
