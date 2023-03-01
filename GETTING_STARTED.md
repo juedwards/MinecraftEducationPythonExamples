@@ -1,6 +1,6 @@
 ![alt text](https://github.com/juedwards/MinecraftEducationPythonExamples/blob/main/education-minecraft-logo.png)
 
-## Getting Started with Minecraft Education
+# Getting Started with Minecraft Education
 
 (Minecraft Education)[https://education.minecraft.net/] is a version of the popular video game Minecraft that has been specifically designed for educational purposes. It is a game-based learning platform that allows educators to use Minecraft as a tool for teaching a wide range of subjects, from math and science to language arts and social studies. In Minecraft Education, players can build and explore virtual worlds, collaborate with other players, and engage in a variety of educational activities. The game features a range of tools and resources that educators can use to create custom lessons and activities, such as lesson plans, assignments, and assessments.
 
@@ -20,7 +20,7 @@ To (download)[https://education.minecraft.net/en-us/get-started/download] the ga
 
 Minecraft Education is available in the Microsoft Store
 
-(![alt text](https://get.microsoft.com/images/en-us%20dark.svg))[https://apps.microsoft.com/store/detail/xbox/9NBLGGH4R2R6]
+![alt text](https://get.microsoft.com/images/en-us%20dark.svg)[https://apps.microsoft.com/store/detail/xbox/9NBLGGH4R2R6]
 
 # Deploying in a School
 
