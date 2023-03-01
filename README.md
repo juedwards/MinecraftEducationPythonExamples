@@ -4,7 +4,7 @@
 
 This repository a collection of python scripts for building objects in [Minecraft Education](https://education.minecraft.net/en-us), using MakeCode python IDE. There is a MakeCode [reference guide](https://minecraft.makecode.com/reference) for Minecraft and a range of [examples](https://minecraft.makecode.com/projects) provided by MakeCode.
 
-If you want to install Minecraft Education read this [Getting Started](https://github.com/juedwards/MinecraftEducationPythonExamples/blob/main/GETTING_STARTED.md) guide.
+If you want to install Minecraft Education read this [Getting Started](https://github.com/juedwards/MinecraftEducationPythonExamples/blob/main/GETTING_STARTED.md) document.
 
 ## Timer
 
