@@ -20,7 +20,7 @@ To (download)[https://education.minecraft.net/en-us/get-started/download] the ga
 
 Minecraft Education is available in the Microsoft Store
 
-(Get it here)[https://apps.microsoft.com/store/detail/xbox/9NBLGGH4R2R6]
+[Get it here](https://apps.microsoft.com/store/detail/xbox/9NBLGGH4R2R6)
 
 
 
