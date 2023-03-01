@@ -30,10 +30,10 @@ To deploy Minecraft Education across a large-scale environment, you can use your
 
 For assistance with Intune, see the following articles.
 
-* (What is Microsoft Intune app management?)[https://docs.microsoft.com/en-us/mem/intune/apps/app-management]
-* (Add apps to Microsoft Intune)[https://learn.microsoft.com/en-us/mem/intune/apps/apps-add]
-* (Add Microsoft Store apps to Microsoft Intune)[https://learn.microsoft.com/en-us/mem/intune/apps/store-apps-windows]
-* (How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune)[https://learn.microsoft.com/en-us/mem/intune/apps/windows-store-for-business]
-* (Distribute offline apps)[https://learn.microsoft.com/en-us/microsoft-store/distribute-offline-apps]
-* (How to get support in Microsoft Endpoint Manager admin center)[https://learn.microsoft.com/en-us/mem/get-support]
+* [What is Microsoft Intune app management?](https://docs.microsoft.com/en-us/mem/intune/apps/app-management)
+* [Add apps to Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/apps/apps-add)
+* [Add Microsoft Store apps to Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/apps/store-apps-windows)
+* [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/apps/windows-store-for-business)
+* [Distribute offline apps](https://learn.microsoft.com/en-us/microsoft-store/distribute-offline-apps)
+* [How to get support in Microsoft Endpoint Manager admin center](https://learn.microsoft.com/en-us/mem/get-support)
 
