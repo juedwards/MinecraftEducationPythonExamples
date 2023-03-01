@@ -6,9 +6,9 @@
 
 Some of the features of Minecraft Education include:
 
-*Code Builder: A built-in tool that allows students to learn coding by programming robots, drones, and other devices in the game.
-*Immersive Reader: A tool that uses advanced text-to-speech and language recognition technology to help students improve their reading and writing skills.
-*Collaboration Tools: A variety of tools and features that allow students to collaborate and work together on projects and assignments.
+* Code Builder: A built-in tool that allows students to learn coding by programming robots, drones, and other devices in the game.
+* Immersive Reader: A tool that uses advanced text-to-speech and language recognition technology to help students improve their reading and writing skills.
+* Collaboration Tools: A variety of tools and features that allow students to collaborate and work together on projects and assignments.
 
 # Download
 
@@ -22,9 +22,9 @@ To deploy Minecraft Education across a large-scale environment, you can use your
 
 For assistance with Intune, see the following articles.
 
-*What is Microsoft Intune app management?
-*Add apps to Microsoft Intune
-*Add Microsoft Store apps to Microsoft Intune
-*How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune
-*Distribute offline apps
-*How to get support in Microsoft Endpoint Manager admin center
+* What is Microsoft Intune app management?
+* Add apps to Microsoft Intune
+* Add Microsoft Store apps to Microsoft Intune
+* How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune
+* Distribute offline apps
+* How to get support in Microsoft Endpoint Manager admin center
