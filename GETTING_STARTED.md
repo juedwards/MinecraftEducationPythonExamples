@@ -22,18 +22,18 @@ Minecraft Education is available in the Microsoft Store
 
 [Get it here](https://apps.microsoft.com/store/detail/xbox/9NBLGGH4R2R6)
 
+Before installing Minecraft Education, ensure these prerequisites are met.
+
+* Your PC must meet the system [requirements](https://aka.ms/MEESupportedPlatforms).
+* Users need to have the correct permissions based on the setup and installation method used at your organization.
+* If installing the app from the Microsoft Store, all apps must be up to date. Minecraft Education cannot be installed if there are updates pending for other apps.
+
+## Mac Installation
+
+* From the Apple Products section of the [Get Minecraft Education](https://aka.ms/MEEDownloadPage) page, select MAC.
+* Confirm the location to download the installation file to and click Save. Result: The installation file begins downloading to your Mac.
+* After the installation file finishes downloading, open the installation file.
+* When prompted, drag-and-drop the Minecraft Education application into the Applications folder. Result: Minecraft Education is installed and ready to play. To open Minecraft Education, locate the application in the Applications folder.
 
 
-## Deploying in a School
-
-To deploy Minecraft Education across a large-scale environment, you can use your organization’s preferred system management software. For guidance on your specific system management software, you will need to consult the manufacturer.
-
-For assistance with Intune, see the following articles.
-
-* [What is Microsoft Intune app management?](https://docs.microsoft.com/en-us/mem/intune/apps/app-management)
-* [Add apps to Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/apps/apps-add)
-* [Add Microsoft Store apps to Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/apps/store-apps-windows)
-* [How to manage volume purchased apps from the Microsoft Store for Business with Microsoft Intune](https://learn.microsoft.com/en-us/mem/intune/apps/windows-store-for-business)
-* [Distribute offline apps](https://learn.microsoft.com/en-us/microsoft-store/distribute-offline-apps)
-* [How to get support in Microsoft Endpoint Manager admin center](https://learn.microsoft.com/en-us/mem/get-support)
 
