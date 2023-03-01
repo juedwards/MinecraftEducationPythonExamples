@@ -12,7 +12,7 @@ Some of the features of Minecraft Education include:
 
 # Download
 
-Minecraft Education can be downloaded from the official Minecraft Education Edition website, which is (education.minecraft.net)[https://education.minecraft.net/].
+Minecraft Education can be downloaded from the official Minecraft Education Edition website, which is [education.minecraft.net](https://education.minecraft.net/).
 
 To [download](https://education.minecraft.net/en-us/get-started/download) the game, you will need to create an account and [purchase a subscription](https://education.minecraft.net/en-us/licensing). Minecraft Education is available for both Windows and macOS operating systems, and there are also versions available for iPad, Chromebook and Mobile Devices. Once you have created an account and purchased a subscription, you will be able to [download](https://education.minecraft.net/en-us/get-started/download) the game and install it on your device. The installation process is straightforward and should only take a few minutes to complete.
 
