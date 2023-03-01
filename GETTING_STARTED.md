@@ -2,7 +2,7 @@
 
 # Getting Started with Minecraft Education
 
-(Minecraft Education)[https://education.minecraft.net/] is a version of the popular video game Minecraft that has been specifically designed for educational purposes. It is a game-based learning platform that allows educators to use Minecraft as a tool for teaching a wide range of subjects, from math and science to language arts and social studies. In Minecraft Education, players can build and explore virtual worlds, collaborate with other players, and engage in a variety of educational activities. The game features a range of tools and resources that educators can use to create custom lessons and activities, such as lesson plans, assignments, and assessments.
+[Minecraft Education](https://education.minecraft.net/) is a version of the popular video game Minecraft that has been specifically designed for educational purposes. It is a game-based learning platform that allows educators to use Minecraft as a tool for teaching a wide range of subjects, from math and science to language arts and social studies. In Minecraft Education, players can build and explore virtual worlds, collaborate with other players, and engage in a variety of educational activities. The game features a range of tools and resources that educators can use to create custom lessons and activities, such as lesson plans, assignments, and assessments.
 
 Some of the features of Minecraft Education include:
 
@@ -14,7 +14,7 @@ Some of the features of Minecraft Education include:
 
 Minecraft Education can be downloaded from the official Minecraft Education Edition website, which is (education.minecraft.net)[https://education.minecraft.net/].
 
-To (download)[https://education.minecraft.net/en-us/get-started/download] the game, you will need to create an account and (purchase a subscription)[https://education.minecraft.net/en-us/licensing]. Minecraft Education is available for both Windows and macOS operating systems, and there are also versions available for iPad, Chromebook and Mobile Devices. Once you have created an account and purchased a subscription, you will be able to (download)[https://education.minecraft.net/en-us/get-started/download] the game and install it on your device. The installation process is straightforward and should only take a few minutes to complete.
+To [download](https://education.minecraft.net/en-us/get-started/download) the game, you will need to create an account and [purchase a subscription](https://education.minecraft.net/en-us/licensing). Minecraft Education is available for both Windows and macOS operating systems, and there are also versions available for iPad, Chromebook and Mobile Devices. Once you have created an account and purchased a subscription, you will be able to [download](https://education.minecraft.net/en-us/get-started/download) the game and install it on your device. The installation process is straightforward and should only take a few minutes to complete.
 
 ## Windows Installation
 
