@@ -68,7 +68,6 @@ color_table = {
     (0, 0, 0): 'BLACK_WOOL'
 }
 
-
 # Convert each RGB value to the nearest color name
 color_names = []
 for row in image_array:
