@@ -2,6 +2,7 @@
 # 14 March 2023
 # @JustinEducation
 # This is similar to the pizel_art_create.py, uses builder instead of agent, therefore is much quicker in building file.
+# The array in this code will make a PI mathematical symbol, 16x16, as an example.
 
 def on_on_chat():
 
