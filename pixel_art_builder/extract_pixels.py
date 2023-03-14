@@ -1,6 +1,6 @@
 # Extract Pixels
 # @JustinEducation Justin Edwards 15 March 2023
-# A python file that opens a PNG file, shrinks the picture to 32x32 pixels and then converts this into an array of Minecraft wool blocks, which can be used
+# A python file that opens a PNG file, shrinks the picture to 16x16 pixels and then converts this into an array of Minecraft wool blocks, which can be used
 # with the pizel_art_builder.py in Minecraft Education MakeCode Python Interface.
 # Recommend use Visual Studio Code to run this code. 
 # You will need to install 'pillow' PIP INSTALL PILLOW on your python to run.
