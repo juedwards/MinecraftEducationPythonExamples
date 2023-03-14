@@ -8,7 +8,7 @@ def on_on_chat():
     # teleport to player
     agent.teleport_to_player()
     
-    # 2d array which contains pixel drawing. Use the extraction script in this folder to get your array.
+    # 2d array which contains pixel drawing.
     art_stack = [[AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR],
     [AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR],
     [AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR],
@@ -38,15 +38,16 @@ def on_on_chat():
             agent.move(FORWARD,1)
             #select the right resourcee in hot bar
             agent.set_item(item, 1, 1)
-            # place behind
-            agent.place(BACK)
+            if agent.get_item_detail(1) == AIR:
+                pass
+            else:
+                # place behind
+                agent.place(BACK)
         #when row is built, move up
         agent.move(UP,1)
         # turn around
-        agent.turn_left()
-        agent.turn_left()
+        agent.move(BACK, len(row))
         # move forward to be ready to build the newt line
-        agent.move(FORWARD,1)
 
 # 'run' in chat runs code
 player.on_chat("run", on_on_chat)
