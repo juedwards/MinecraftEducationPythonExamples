@@ -10,11 +10,12 @@ import numpy as np
 import os
 
 # Define the path to the image file
-path = r'D:\zombie.png'
+path = r'D:\nasa.png'
 
 # Open the image and resize it to 32 x 32 pixels
 image = Image.open(path)
-resized_image = image.resize((4, 4))
+image = image.rotate(180)
+resized_image = image.resize((64, 64))
 
 # Save the resized image with "2" added to the filename
 filename, extension = os.path.splitext(path)
@@ -29,7 +30,7 @@ image_array = np.delete(image_array, 3, axis=2)
 
 # Define the color table
 color_table = {
-    (255, 255, 255): 'WHITE_WOOL',
+    (255, 255, 255): 'AIR',
     (255, 128, 0): 'ORANGE_WOOL',
     (255, 0, 255): 'MAGENTA_WOOL',
     (173, 216, 230): 'LIGHT_BLUE_WOOL',
