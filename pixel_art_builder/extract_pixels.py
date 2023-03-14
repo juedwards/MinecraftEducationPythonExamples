@@ -1,5 +1,5 @@
 # Extract Pixels
-# @JustinEducation Justin Edwards 14 March 2023
+# @JustinEducation Justin Edwards 15 March 2023
 # A python file that opens a PNG file, shrinks the picture to 32x32 pixels and then converts this into an array of Minecraft wool blocks, which can be used
 # with the pizel_art_builder.py in Minecraft Education MakeCode Python Interface.
 # Recommend use Visual Studio Code to run this code. 
@@ -10,17 +10,29 @@ import numpy as np
 import os
 
 # Define the path to the image file
-path = r'D:\nasa.png'
+# Here I saved teh image to my local drive.
+path = r'D:\pi.png'
 
-# Open the image and resize it to 32 x 32 pixels
+# Open the image and resize it to 16 x 16 pixels
 image = Image.open(path)
 image = image.rotate(180)
-resized_image = image.resize((64, 64))
+resized_image = image.resize((16, 16))
+
+# Check if the mode and size of the images match
+if resized_image.mode != 'RGBA':
+    resized_image = resized_image.convert('RGBA')
+
+if resized_image.size != (16, 16):
+    raise ValueError("Resized image size does not match (16, 16)")
+
+# Create a new background image filled with white color
+background = Image.new('RGBA', resized_image.size, (255, 255, 255, 255))
 
 # Save the resized image with "2" added to the filename
 filename, extension = os.path.splitext(path)
 new_filename = f"{filename}2{extension}"
 resized_image.save(new_filename)
+resized_image.show()
 
 # Convert the resized image to a NumPy array
 image_array = np.asarray(resized_image)
@@ -47,6 +59,7 @@ color_table = {
     (255, 0, 0): 'RED_WOOL',
     (0, 0, 0): 'BLACK_WOOL'
 }
+
 
 # Convert each RGB value to the nearest color name
 color_names = []
