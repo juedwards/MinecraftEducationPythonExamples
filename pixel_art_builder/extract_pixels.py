@@ -87,6 +87,7 @@ for row in image_array:
     color_names.append(color_row)
 
 # Save the color names as a text file with the same name as the amended image item
+# So is file is pi.png, then output file is pi2_colors.txt. THis is the file that will contain the array that you copy into the Minecraft python.
 color_filename = f"{filename}2_colors.txt"
 with open(color_filename, 'w') as file:
     for i, row in enumerate(color_names):
