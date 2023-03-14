@@ -1,6 +1,7 @@
-# Agent Pixel Art with Array
-# 26 Feb 2023
+# Agent Pixel Art with Array from Pizel Art Builder
+# 14 March 2023
 # @JustinEducation
+# This file is to be used with array created by the pixel art builder, where the output is inserted into art_stack array.
 
 def on_on_chat():
 
