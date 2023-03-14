@@ -14,7 +14,7 @@ path = r'D:\zombie.png'
 
 # Open the image and resize it to 32 x 32 pixels
 image = Image.open(path)
-resized_image = image.resize((32, 32))
+resized_image = image.resize((4, 4))
 
 # Save the resized image with "2" added to the filename
 filename, extension = os.path.splitext(path)
@@ -68,8 +68,14 @@ for row in image_array:
 # Save the color names as a text file with the same name as the amended image item
 color_filename = f"{filename}2_colors.txt"
 with open(color_filename, 'w') as file:
-    for row in color_names:
-        file.write(str(row) + '\n')
+    for i, row in enumerate(color_names):
+        if i == 0:
+            file.write("[")
+        file.write(str(row).replace("'", ""))
+        if i == len(color_names) - 1:
+            file.write("]")
+        else:
+            file.write(",\n")
 
 # Print the results
 width, height = resized_image.size
