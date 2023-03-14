@@ -8,12 +8,24 @@ def on_on_chat():
     # teleport to player
     agent.teleport_to_player()
     
-    # 2d array which contains pixel drawing 10x10.
-    art_stack = [[BROWN_WOOL, GRAY_WOOL, GRAY_WOOL, BROWN_WOOL],
-                [GRAY_WOOL, GRAY_WOOL, GRAY_WOOL, GRAY_WOOL],
-                [GRAY_WOOL, BROWN_WOOL, BROWN_WOOL, BROWN_WOOL],
-                [GREEN_WOOL, BROWN_WOOL, GREEN_WOOL, GREEN_WOOL]]
-
+    # 2d array which contains pixel drawing. Use the extraction script in this folder to get your array.
+    art_stack = [[AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR],
+    [AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR],
+    [AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR],
+    [AIR, AIR, AIR, AIR, BLACK_WOOL, BLACK_WOOL, AIR, AIR, AIR, AIR, BLACK_WOOL, BLACK_WOOL, AIR, AIR, AIR, AIR],
+    [AIR, AIR, AIR, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, AIR, AIR, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, AIR, AIR, AIR],
+    [AIR, AIR, AIR, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, AIR, AIR, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, AIR, AIR, AIR],
+    [AIR, AIR, AIR, BLACK_WOOL, AIR, BLACK_WOOL, BLACK_WOOL, AIR, AIR, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, AIR, AIR, AIR, AIR],
+    [AIR, AIR, AIR, AIR, AIR, BLACK_WOOL, BLACK_WOOL, AIR, AIR, BLACK_WOOL, BLACK_WOOL, AIR, AIR, AIR, AIR, AIR],
+    [AIR, AIR, AIR, AIR, AIR, BLACK_WOOL, BLACK_WOOL, AIR, AIR, BLACK_WOOL, BLACK_WOOL, AIR, AIR, AIR, AIR, AIR],
+    [AIR, AIR, AIR, AIR, AIR, BLACK_WOOL, BLACK_WOOL, AIR, AIR, BLACK_WOOL, AIR, AIR, AIR, AIR, AIR, AIR],
+    [AIR, AIR, AIR, AIR, AIR, BLACK_WOOL, BLACK_WOOL, AIR, BLACK_WOOL, BLACK_WOOL, AIR, AIR, BLACK_WOOL, AIR, AIR, AIR],
+    [AIR, AIR, AIR, AIR, AIR, BLACK_WOOL, BLACK_WOOL, AIR, BLACK_WOOL, BLACK_WOOL, AIR, BLACK_WOOL, BLACK_WOOL, AIR, AIR, AIR],
+    [AIR, AIR, AIR, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, AIR, AIR, AIR],
+    [AIR, AIR, AIR, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, BLACK_WOOL, AIR, AIR, AIR, AIR],
+    [AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR],
+    [AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR, AIR]]
+    
     player.say("Running code.")
     
     #loop through rows in array
@@ -26,7 +38,6 @@ def on_on_chat():
             agent.move(FORWARD,1)
             #select the right resourcee in hot bar
             agent.set_item(item, 1, 1)
-            # agent.set_item(item,1,1)
             # place behind
             agent.place(BACK)
         #when row is built, move up
