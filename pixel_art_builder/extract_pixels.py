@@ -1,5 +1,5 @@
 # Extract Pixels from a PNG file
-# @JustinEducation Justin Edwards 15 March 2023
+# @JustinEducation - Justin Edwards 15 March 2023
 # A python file that opens a PNG file, shrinks the picture to a set size ('x' and 'y') in pixels and then converts this into an array of Minecraft Wool Blocks, which can be used
 # with the pixel_art_create.py or pixel_art_withbuilder.py (second one much faster) in Minecraft Education MakeCode Python Interface.
 # Recommend use Visual Studio Code to run this particular code. 
