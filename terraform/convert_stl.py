@@ -1,27 +1,30 @@
+import os
 import numpy as np
-from stl import mesh
+import trimesh
 
-# Load the STL file and parse it
-mesh_data = mesh.Mesh.from_file('Copernicuscrater3Xv.stl')
 
-# Extract the vertices from the mesh data
-vertices = mesh_data.vectors.reshape(-1, 3)
+# Get the path to your home directory
+home_dir = os.path.expanduser('~')
+# Set a file path within your home directory
+file_path = os.path.join(home_dir, 'Copernicuscrater3Xv.stl')
+# Load the STL file
+stl_mesh = trimesh.load(file_path)
 
-# Create the 3D array from the vertices
-x, y, z = vertices.T
-x_range = np.arange(np.ceil(x.min()), np.floor(x.max()) + 1)
-y_range = np.arange(np.ceil(y.min()), np.floor(y.max()) + 1)
-z_range = np.arange(np.ceil(z.min()), np.floor(z.max()) + 1)
-xx, yy, zz = np.meshgrid(x_range, y_range, z_range, indexing='ij')
-voxel_array = np.zeros(xx.shape, dtype=bool)
+# Rescale the vertex coordinates to fit in a 100x100x100 array
+vertices = stl_mesh.vertices / stl_mesh.vertices.max() * 100
 
-for triangle in mesh_data.vectors:
-    coords = triangle.flatten().reshape(3, 3)
-    voxel_coords = np.stack((np.interp(coords[:, 0], x_range, np.arange(x_range.size)),
-                             np.interp(coords[:, 1], y_range, np.arange(y_range.size)),
-                             np.interp(coords[:, 2], z_range, np.arange(z_range.size))), axis=1)
-    voxel_coords = np.round(voxel_coords).astype(int)
-    voxel_array[voxel_coords[:, 0], voxel_coords[:, 1], voxel_coords[:, 2]] = True
+# Extract the vertex coordinates of each triangle
+triangles = vertices[stl_mesh.faces]
 
-# Save the 3D array as a text file
-np.savetxt('Output.txt', voxel_array.astype(int), fmt='%d')
+# Create a 3D NumPy array with the vertex coordinates
+array = np.zeros((100, 100, 100), dtype=bool)
+
+for triangle in triangles:
+    xmin, ymin, zmin = triangle.min(axis=0).astype(int)
+    xmax, ymax, zmax = triangle.max(axis=0).astype(int)
+    array[xmin:xmax+1, ymin:ymax+1, zmin:zmax+1] = True
+
+# Set file path for output
+output_path = os.path.join(home_dir, 'array.txt')
+# Save the array to a text file
+np.savetxt(output_path, np.array_str(array.astype(int), max_line_width=np.inf).replace('[', '[[').replace(']', ']]').replace('\n ', '\n').replace(' ', ',').replace('[,', '['), fmt='%s')
