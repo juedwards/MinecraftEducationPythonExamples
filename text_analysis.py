@@ -207,30 +207,19 @@ def count_syllables(word):
     return count
 
 
-
-
-
-
-# open and convert the .mcworld file to a .zip file and extract, saving the path to the extracted folder
 destination_folder_path = open_and_convert()
-# if destination_folder_path is not "" then print the path to the extracted folder
+
 if destination_folder_path:
     print(f"Extracted folder: {destination_folder_path}")
-#ask the user if they would like to find the us_EN.lang file
-find_us_EN = input("Would you like to find the us_EN.lang file? (y/n): ")
-#if the user would like to find the en_US.lang file, then call the function to find it
-if find_us_EN.lower() == "y":
-    path_to_en_US_lang = find_en_US_lang(destination_folder_path)
-#if path_to_en_US_lang is not null or empty, ask the user if they would like to carry out text analysis on the en_US.lang file
-if path_to_en_US_lang:
-    do_text_analysis = input("Would you like to carry out text analysis on the en_US.lang file? (y/n): ")
-#if the user would like to carry out text analysis on the en_US.lang file, then call the function to carry it out
-if do_text_analysis.lower() == "y":
-    print(path_to_en_US_lang)
-    text_analysis(path_to_en_US_lang)
 
+    find_us_EN = input("Would you like to find the us_EN.lang file? (y/n): ").lower()
 
+    if find_us_EN == "y":
+        path_to_en_US_lang = find_en_US_lang(destination_folder_path)
 
-    
-    
+        if path_to_en_US_lang:
+            do_text_analysis = input("Would you like to carry out text analysis on the en_US.lang file? (y/n): ").lower()
 
+            if do_text_analysis == "y":
+                print(path_to_en_US_lang)
+                text_analysis(path_to_en_US_lang)
