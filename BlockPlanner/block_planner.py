@@ -1,7 +1,8 @@
 # Block Planner
 # A small app to help children transition from 2D to 3D space
 # Justin Edwards, Microsoft
-# 24 November 2023
+# Original: 24 November 2023
+# Updated: 4 January 2024
 
 import tkinter as tk
 
@@ -25,16 +26,16 @@ def reset_grid():
 
 def update_count():
     count = sum(canvas.itemcget(item, "fill") == "black" for row in grid_items for item in row)
-    count_var.set(f"Black Squares: {count}")
+    count_var.set(f"Blocks Placed: {count}")
 
 def exit_app():
     root.destroy()
 
 root = tk.Tk()
 root.title("BlockPlanner")
-root.geometry("500x500")
+root.geometry("800x500")
 
-canvas = tk.Canvas(root, width=500, height=500)
+canvas = tk.Canvas(root, width=800, height=500)
 canvas.pack()
 
 grid_items = []
@@ -51,6 +52,9 @@ reset_button.place(x=10, y=10)
 
 exit_button = tk.Button(root, text="Exit", command=exit_app)
 exit_button.place(x=80, y=10)
+
+code_button = tk.Button(root, text="Code", command=0)
+code_button.place(x=150, y=10)
 
 count_var = tk.StringVar()
 count_label = tk.Label(root, textvariable=count_var)

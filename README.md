@@ -6,6 +6,10 @@ This repository a collection of python scripts for building objects in [Minecraf
 
 If you want to install Minecraft Education read this [Getting Started](https://github.com/juedwards/MinecraftEducationPythonExamples/blob/main/GETTING_STARTED.md) document.
 
+## Block Planner
+
+This is a python script that creates a small applicationfor planning out block placementin 2D. This is to helps younger students plan thier builds. 
+
 ## Timer
 
 ![alt text](https://pbs.twimg.com/media/FqC_NyIXwAAhBXz?format=jpg&name=360x360)
