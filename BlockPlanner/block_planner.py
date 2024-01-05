@@ -24,6 +24,24 @@ def reset_grid():
             canvas.itemconfig(item, fill="white")
     update_count()
 
+def code_button_clicked():
+    # Create the 2D array
+    grid_array = [[1 if canvas.itemcget(item, "fill") == "black" else 0 for item in row] for row in grid_items]
+    
+    # Convert the 2D array to a string formatted as a Python list
+    grid_str = repr(grid_array)
+    
+    # Create a new tkinter window
+    output_window = tk.Toplevel(root)
+    output_window.title("Code Output")
+    
+    # Create a Text widget
+    text_widget = tk.Text(output_window)
+    text_widget.pack()
+    
+    # Insert the grid string into the Text widget
+    text_widget.insert(tk.END, grid_str)
+
 def update_count():
     count = sum(canvas.itemcget(item, "fill") == "black" for row in grid_items for item in row)
     count_var.set(f"Blocks Placed: {count}")
@@ -53,7 +71,7 @@ reset_button.place(x=10, y=10)
 exit_button = tk.Button(root, text="Exit", command=exit_app)
 exit_button.place(x=80, y=10)
 
-code_button = tk.Button(root, text="Code", command=0)
+code_button = tk.Button(root, text="Code", command=code_button_clicked)
 code_button.place(x=150, y=10)
 
 count_var = tk.StringVar()
