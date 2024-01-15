@@ -4,7 +4,9 @@
 # 2020-04-01
 # v1.0.0
 
-import openai
+from openai import OpenAI
+
+client = OpenAI(api_key=openai_api_key)
 import requests
 import sys
 
@@ -33,11 +35,9 @@ else:
 
 def translate_text(text, target_language):
     try:
-        response = openai.Completion.create(
-            model="gpt-3.5-turbo",  # or the appropriate model name
-            prompt=f"Translate the following English text to {target_language}: {text}",
-            max_tokens=60
-        )
+        response = client.completions.create(model="gpt-3.5-turbo",  # or the appropriate model name
+        prompt=f"Translate the following English text to {target_language}: {text}",
+        max_tokens=60)
         return response.choices[0].text.strip()
     except Exception as e:
         print(f"Error during translation: {e}")
@@ -64,7 +64,6 @@ def translate_file(file_path, target_language):
         file.writelines(translated_lines)
 
 # Set your OpenAI API key
-openai.api_key = openai_api_key
 
 # Set file path
 file_path = 'C:\\Users\\juedwards\\Downloads\\en_US_goo_game.lang' # Change this to the path of your lang file
