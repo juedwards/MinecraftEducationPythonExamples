@@ -69,5 +69,5 @@ def translate_file(file_path, target_language, lines_to_translate=-1):
     print("Translation complete. File saved as: " + output_file_path)
 
 # Example usage
-translate_file('C:\\Users\\file_location', 'Spanish', 20)  # Translate first 20 lines
+translate_file('C:\\Users\\juedwards\\Downloads\\en_US_goo_game.lang', 'Japanese', 20)  # Translate first 20 lines
 # translate_file('C:\\Users\\file_location', 'Spanish')  # Translate the whole file
