@@ -1,3 +1,7 @@
+# Minecraft Education Language Tool
+# Justin Edwards
+# Created: 2021-09-21
+
 import requests
 import openai
 from openai import Client
