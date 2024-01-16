@@ -43,16 +43,31 @@ def translate_text(text, target_language):
         print(f"Error during translation: {e}")
         return None
 
-def translate_file(file_path, target_language):
+def translate_file(file_path, target_language, lines_to_translate=-1):
     translated_lines = []
     with open(file_path, 'r', encoding='utf-8') as file:
-        for line in file:
+        for line_number, line in enumerate(file, start=1):
             if '=' in line and '###' in line:
                 text_to_translate = line.split('=')[1].split('###')[0].strip()
+                print('Sending: ' + text_to_translate + ' and translating to ' + target_language + '.')
                 translated_text = translate_text(text_to_translate, target_language)
+                print('Received: ' + translated_text)
                 translated_lines.append(line.replace(text_to_translate, translated_text))
             else:
                 translated_lines.append(line)
-    return translated_lines
-    
-print(translate_text("Hello, how are you?", "Spanish"))
+
+            # Break the loop if the specified number of lines has been translated
+            if 0 < lines_to_translate == line_number:
+                break
+
+    # Write the translated lines to a new file
+    output_file_path = file_path.replace(".lang", "_translated.lang")
+    with open(output_file_path, 'w', encoding='utf-8') as file:
+        for line in translated_lines:
+            file.write(line)
+
+    print("Translation complete. File saved as: " + output_file_path)
+
+# Example usage
+translate_file('C:\\Users\\juedwards\\Downloads\\en_US_goo_game.lang', 'Spanish', 20)  # Translate first 20 lines
+# translate_file('C:\\Users\\juedwards\\Downloads\\en_US_goo_game.lang', 'Spanish')  # Translate the whole file
