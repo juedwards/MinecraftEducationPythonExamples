@@ -1,3 +1,12 @@
+# PDF to MD file converter with a GUI, for use with the AI Vector Tools project
+# This script uses the PyMuPDF library to extract text from PDF files and convert it to Markdown format
+# The script also uses the markdownify library to convert the extracted text to Markdown
+# The script includes a GUI created with the tkinter library
+# The GUI allows the user to select an input folder containing PDF files and an output folder to save the converted MD files
+# The script also includes a function to split MD files if they exceed 65,000 characters
+
+# Import required libraries
+
 import os
 import re
 import fitz  # Import PyMuPDF
