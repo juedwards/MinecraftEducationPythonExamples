@@ -13,6 +13,8 @@ def clean_text(text):
     text = ' '.join(text.split())
     # Remove multiple newlines
     text = re.sub(r'\n\s*\n', '\n', text, flags=re.MULTILINE)
+    # Find and replace "Minecraft Education Edition" or "Minecraft: Education Edition" with "Minecraft Education"
+    text = re.sub(r'Minecraft\s*:?(\s*Education\s*Edition)?', 'Minecraft Education', text, flags=re.IGNORECASE)
     return text
 
 def sanitize_filename(filename):
