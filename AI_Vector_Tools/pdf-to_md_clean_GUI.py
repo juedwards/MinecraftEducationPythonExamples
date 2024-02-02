@@ -106,32 +106,36 @@ root = tk.Tk()
 root.title("PDF to MD Converter")
 root.geometry("400x400")
 
+# Styling
+root.configure(bg="#F0F0F0")
+root.option_add("*Font", "Arial 12")
+
 # Input folder label and entry
-input_folder_label = tk.Label(root, text="Select Input Folder:")
-input_folder_label.pack()
-input_folder_entry = tk.Entry(root)
+input_folder_label = tk.Label(root, text="Select Input Folder:", bg="#F0F0F0")
+input_folder_label.pack(pady=10)
+input_folder_entry = tk.Entry(root, width=30)
 input_folder_entry.pack()
 input_folder_button = tk.Button(root, text="Browse", command=select_input_folder)
-input_folder_button.pack()
+input_folder_button.pack(pady=5)
 
 # Output folder label and entry
-output_folder_label = tk.Label(root, text="Select Output Folder:")
-output_folder_label.pack()
-output_folder_entry = tk.Entry(root)
+output_folder_label = tk.Label(root, text="Select Output Folder:", bg="#F0F0F0")
+output_folder_label.pack(pady=10)
+output_folder_entry = tk.Entry(root, width=30)
 output_folder_entry.pack()
 output_folder_button = tk.Button(root, text="Browse", command=select_output_folder)
-output_folder_button.pack()
+output_folder_button.pack(pady=5)
 
 # Convert button
-convert_button = tk.Button(root, text="Convert PDF to MD", command=convert_pdf_to_md)
-convert_button.pack()
+convert_button = tk.Button(root, text="Convert PDF to MD", command=convert_pdf_to_md, bg="#4CAF50", fg="white")
+convert_button.pack(pady=20)
 
 # Progress label
-progress_label = tk.Label(root, text="")
+progress_label = tk.Label(root, text="", bg="#F0F0F0")
 progress_label.pack()
 
-exit_button = tk.Button(root, text="Exit", command=exit_app)
-exit_button.pack(pady=20)
+exit_button = tk.Button(root, text="Exit", command=exit_app, bg="#F44336", fg="white")
+exit_button.pack(pady=10)
 
 # Start the tkinter main loop
 root.mainloop()
