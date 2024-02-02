@@ -21,3 +21,19 @@ Before using the PDF to Markdown Converter, make sure to install the required Py
 
 ```bash
 pip install -r requirements.txt
+
+## Usage
+
+To convert PDF files to Markdown, follow these steps:
+
+1. Run the script by executing the main Python script, e.g., `pdf-to-md.py`.
+
+2. The application window will open, allowing you to select input and output folders.
+
+3. Click the "Browse" button next to "Select Input Folder" to choose the folder containing your PDF files.
+
+4. Click the "Browse" button next to "Select Output Folder" to specify the folder where the generated Markdown files should be saved.
+
+5. Click the "Convert PDF to MD" button to start the conversion process. The script will convert all PDF files in the input folder and save the resulting Markdown files in the output folder.
+
+6. The progress label will indicate when the conversion is completed.
