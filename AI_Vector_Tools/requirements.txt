@@ -1,0 +1,2 @@
+PyMuPDF==1.18.16
+markdownify==0.6.0
