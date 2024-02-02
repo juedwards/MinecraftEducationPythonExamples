@@ -24,6 +24,32 @@ def sanitize_filename(filename):
         filename = filename.replace(char, '_')
     return filename
 
+# Function to split MD files if they exceed 65,000 characters
+def split_md_files(output_folder):
+    md_files = [file for file in os.listdir(output_folder) if file.endswith('.md')]
+    
+    for md_file in md_files:
+        md_file_path = os.path.join(output_folder, md_file)
+        
+        with open(md_file_path, 'r', encoding='utf-8') as original_file:
+            content = original_file.read()
+        
+        if len(content) > 65000:
+            # Split the content into chunks
+            chunks = [content[i:i + 65000] for i in range(0, len(content), 65000)]
+            
+            # Save the split chunks as new files
+            base_name, extension = os.path.splitext(md_file)
+            
+            for i, chunk in enumerate(chunks):
+                split_md_file_path = os.path.join(output_folder, f"{base_name}_part_{i+1}{extension}")
+                with open(split_md_file_path, 'w', encoding='utf-8') as split_file:
+                    split_file.write(chunk)
+            
+            # Remove the original MD file
+            os.remove(md_file_path)
+
+
 def pdf_to_md(pdf_path, output_folder):
     # Open PDF file with PyMuPDF
     pdf_document = fitz.open(pdf_path)
@@ -93,6 +119,9 @@ def convert_pdf_to_md():
     for pdf_file in pdf_files:
         pdf_path = os.path.join(input_folder, pdf_file)
         pdf_to_md(pdf_path, output_folder)
+
+    # Call the split_md_files function after the conversion
+    split_md_files(output_folder)
 
     progress_label.config(text="Conversion completed.")
     messagebox.showinfo("Info", "PDF to MD conversion completed.")
