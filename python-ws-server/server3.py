@@ -13,7 +13,7 @@ BOT_TAG = "[AI]"
 SUPER_SCRIPT = "§e"
 
 async def generate_gpt_response(message):
-    prompt = f"Respond to the following message from a Minecraft player, making sure that your language is suitable for age 9: {message}"
+    prompt = f"Respond to the following message from a Minecraft Education player, making sure that your language is suitable for age 9: {message}"
     completion = await client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
