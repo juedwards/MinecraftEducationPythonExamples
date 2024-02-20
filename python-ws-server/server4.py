@@ -18,7 +18,7 @@ SUPER_SCRIPT = "§e"
 async def generate_gpt_response(message):
     prompt = {
         "role": "system",
-        "content": f"Respond to the following message from a Minecraft Education player, making sure your language is suitable for age 9 and the response is always about Minecraft Education: {message}"
+        "content": f"Respond to the following message from a Minecraft Education player, making sure your language is suitable for age 9: {message}"
     }
     completion = openai.ChatCompletion.create(
         engine="gpt-35-turbo-Lorenzo-Test",
