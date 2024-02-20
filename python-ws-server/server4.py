@@ -3,10 +3,12 @@ import websockets
 import json
 import os
 from uuid import uuid4
-from openai import AsyncOpenAI
+import openai 
 
-# Initialize the AsyncOpenAI client with the API key from environment variables
-client = AsyncOpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+openai.api_type = "azure"
+openai.api_base = "https://dev-azure-ai-studio-aiservices1665690750.openai.azure.com/"
+openai.api_version = "2023-07-01-preview"
+openai.api_key = os.getenv("AZURE_OPENAI_API_KEY")
 
 # Unique tag for identifying messages sent by the bot
 BOT_TAG = "[ai]"
@@ -14,13 +16,19 @@ BOT_TAG = "[ai]"
 SUPER_SCRIPT = "§e"
 
 async def generate_gpt_response(message):
-    prompt = f"Respond to the following message from a Minecraft Education player, making sure that your language is suitable for age 9 and the response is always about Minecraft Education: {message}"
-    completion = await client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant."},
-            {"role": "user", "content": message}
-        ]
+    prompt = {
+        "role": "system",
+        "content": f"Respond to the following message from a Minecraft Education player, making sure your language is suitable for age 9 and the response is always about Minecraft Education: {message}"
+    }
+    completion = openai.ChatCompletion.create(
+        engine="gpt-35-turbo-Lorenzo-Test",
+        messages=[prompt],  # Here, the prompt is wrapped in a list
+        temperature=0.7,
+        max_tokens=800,
+        top_p=0.95,
+        frequency_penalty=0,
+        presence_penalty=0,
+        stop=None
     )
     output = completion.choices[0].message.content.strip()
     print("Copilot says: " + output)
