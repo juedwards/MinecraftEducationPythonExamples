@@ -12,10 +12,10 @@ import matplotlib.pyplot as plt
 
 # Define the path to the image file
 # Here I saved teh image to my local drive.
-path = r'C:\Users\juedwards\Downloads\full_steam.png'
+path = r'C:\Users\juedwards\Downloads\copilot.png'
 
 # Set the width of the output image in blocks, y is calculated from the aspect ration of the original image.
-x = 25
+x = 90
 
 # Open the image and calculate the aspect ratio
 image = Image.open(path)
