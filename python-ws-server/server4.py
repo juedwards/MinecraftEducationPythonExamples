@@ -8,7 +8,8 @@ import openai
 openai.api_type = "azure"
 openai.api_base = "https://dev-azure-ai-studio-aiservices1665690750.openai.azure.com/"
 openai.api_version = "2023-07-01-preview"
-openai.api_key = os.getenv("AZURE_OPENAI_API_KEY")
+openai.api_key = os.getenv("AZURE_OPEN_API_KEY")
+
 
 # Unique tag for identifying messages sent by the bot
 BOT_TAG = "[ai]"

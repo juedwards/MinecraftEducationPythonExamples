@@ -19,15 +19,20 @@ def load_data(file_path):
 def plot_player_journeys(data):
     player_paths = {}
     for entry in data:
-        player_id = entry['body']['player']['name']
-        x = entry['body']['player']['position']['x']
-        y = entry['body']['player']['position']['y']
-        z = entry['body']['player']['position']['z']
-        if player_id not in player_paths:
-            player_paths[player_id] = {'x': [], 'y': [], 'z': []}
-        player_paths[player_id]['x'].append(x)
-        player_paths[player_id]['y'].append(y)
-        player_paths[player_id]['z'].append(z)
+        # Check if 'player' key exists in 'body'
+        if 'player' in entry.get('body', {}):
+            player_id = entry['body']['player']['name']
+            x = entry['body']['player']['position']['x']
+            y = entry['body']['player']['position']['y']
+            z = entry['body']['player']['position']['z']
+            if player_id not in player_paths:
+                player_paths[player_id] = {'x': [], 'y': [], 'z': []}
+            player_paths[player_id]['x'].append(x)
+            player_paths[player_id]['y'].append(y)
+            player_paths[player_id]['z'].append(z)
+        else:
+            # Optionally, print a warning or handle entries without 'player' differently
+            print(f"Warning: 'player' key not found in entry: {entry}")
 
     fig = plt.figure(figsize=(10, 8))
     ax = fig.add_subplot(111, projection='3d')
@@ -39,6 +44,7 @@ def plot_player_journeys(data):
     ax.set_ylabel('Z Coordinate')
     ax.set_zlabel('Y Coordinate')
     ax.legend()
+
 
 # Generate and display the player analysis report
 def display_player_analysis(data):
@@ -60,7 +66,7 @@ def display_player_analysis(data):
         print(f"{name:<20}{report['distance_traveled']:<20}{report['blocks_broken']:<15}{report['blocks_placed']:<15}")
 
 def main():
-    file_path = 'C:\\Users\\juedwards\\github_python\\2102240119.json'
+    file_path = 'C:\\Users\\juedwards\\github_python\\2102240011.json'
     data = load_data(file_path)
     display_player_analysis(data)  # Display the player analysis report in the console
     plot_player_journeys(data)
