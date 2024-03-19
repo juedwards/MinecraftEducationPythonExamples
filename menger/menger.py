@@ -1,7 +1,7 @@
 # Menger Sponge Builder for MakeCode Python, with color wool
 # Adaptation of Möbius Strip Builder Template
 # @JustinEducation
-# 7 March 2024
+# 19 March 2024
 
 # Set global variables
 playerX = 0
